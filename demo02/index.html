@@ -17,7 +17,13 @@
             return <div key={index}>Hello, {name}!</div>
           })
         }
+        <div>
+            {
+                names.map((v,i )=>{ return <div key={i}>Hello,{v},{i+1}</div>})
+            }
+        </div>
         </div>,
+
         document.getElementById('example')
       );
     </script>
